@@ -1,0 +1,72 @@
+.content{
+    text-align: center;
+}
+.container h2{
+    text-align: right;
+    color: #0054CE;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    font-size: 30px;
+}
+.transactions{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+.transactions .box{
+    padding: 2rem 4rem;
+    border: 1px solid #707070;
+    margin:0 1rem;
+}
+.transactions .box .label{
+    color: #ED3118;
+    font-weight: bold;
+    font-size: medium;
+    padding-bottom: 20px;
+}
+.transactions .box .number{
+    color: #3C3C3B;
+    font-weight: bold;
+    font-size: 30px;
+}
+.content > h5{
+    color: #3C3C3B;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-size: 20px;
+}
+.content > .label{
+    margin-top: 3rem;
+}
+.content h4{
+    color: #3C3C3B;
+    margin-top: 3rem;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 3rem 3rem 0;
+
+}
+footer a{
+    text-decoration: none;
+    margin: 5px 5px 0 70px;
+    color: #A9A9A9;
+    font-weight: 600;
+    font-size: 20px;
+}
+footer img{
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+
+}
+footer .facebook{
+    border: 2px solid black;
+    padding: 3px;
+    border-radius: 100%;
+}
+

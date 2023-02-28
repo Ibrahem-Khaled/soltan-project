@@ -1,0 +1,33 @@
+
+.content{
+    margin-top: 5rem;
+}
+
+#submitoffice{
+    padding: 0.1rem 2rem;
+    background-color: #0054CE;
+    color: #F6F6F6;
+    cursor: pointer;
+} 
+
+
+#tableoffice {
+    width: 100%;
+    border-collapse: collapse ;
+
+  }
+  
+  #tableoffice td, #tableoffice th {
+    text-align: center;
+    padding: 0.6rem;
+  }
+
+  #tableoffice th {
+    background-color: #F6F6F6;
+
+  }
+
+
+  #tableoffice tr{
+    border: 1px solid #0054CE;
+  }

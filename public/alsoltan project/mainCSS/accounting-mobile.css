@@ -1,0 +1,27 @@
+@media (max-width:575.5px){
+    .content table{
+        font-size: small;
+    }
+}
+.content h2{
+    color: #3C3C3B;
+    font-size: small;
+}
+.content .mobile-title{
+    font-size: larger;
+    color: #0054CE;
+    display: block;
+}
+.accounting2 table{
+    font-size: x-small;
+}
+@media (max-width:500px){
+    .accounting2 table{
+        font-size: xx-small;
+    }
+}
+@media (max-width:400px){
+    .accounting2 table{
+        font-size: 7px;
+    }
+}

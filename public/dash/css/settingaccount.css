@@ -1,0 +1,84 @@
+
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+.left{
+    background-color: #F6F6F6;
+    color: #3C3C3B;    
+}
+.profile{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+.profile i{
+    margin-left: 1rem;
+    font-size: 2rem;
+}
+
+.profile span{
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.btn{
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    border: unset;
+    background-color: unset;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 100%;
+}
+
+.btn p{
+margin-right: 0.5rem;
+}
+
+.btn:hover{
+    background-color: #0054CE;
+    color: white;
+    width: 100%;
+}
+
+.clickd{
+    background-color: #0054CE;
+    color: white;
+}
+.right{
+    display: flex;
+  flex: 1;
+  justify-content: center;
+}
+.insetting{
+    border: 1px solid #3C3C3B;
+    width: 80%;
+    padding: 1rem; 
+    }
+.edit-data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+   
+}
+.datauser{
+    display: flex;
+    align-items: center;
+}
+
+.edit-btn{
+    margin-right: 1rem;
+    padding: 0.3rem 1rem;
+    border-radius: 5px;
+    
+}
+
+.repassword form{
+    display: flex;
+}

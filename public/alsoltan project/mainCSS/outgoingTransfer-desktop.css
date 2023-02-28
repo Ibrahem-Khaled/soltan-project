@@ -1,0 +1,79 @@
+.content h2{
+    color: #0054CE;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+.content .transfer{
+    display: flex;
+    padding: 2.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #707070F2;
+}
+.content .transfer ul{
+    padding: 0;
+    width: 100%;
+    margin: 0;
+}
+.content .transfer ul li{
+    height: 5rem;
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.content .transfer ul li div{
+    display: flex;
+    margin-right: 10px;
+    padding-left: 25%;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.content .transfer ul li div div{
+    padding: 0;
+}
+.content .transfer ul li div:has(div[class="reciver-name"]){
+    grid-column: span 2;
+    margin-left: 30%;
+}
+.content .received{
+    background-color: #DCF8E8;
+
+}
+.content .received .state{
+    display: flex;
+    align-items: center;
+    color: #0054CE;
+    font-weight:bold ;
+    font-size: larger;
+}
+.content .received button{
+    display: none;
+}
+.content .not-received .state{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    white-space: nowrap;
+    font-size: small;
+    color: #FF0034;
+    font-weight: bold
+}
+.content .not-received button{
+    padding: 0.2rem 1rem;
+    border: none;
+    background-color: #FC00335C;
+    color: inherit;
+    font-weight: inherit;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.content .not-received ul li div:has(div[class="receive-time"]),
+.content .not-received ul li div:has(div[class="receive-date"]),
+.content .not-received ul li div:has(div[class="receiver-name"]){
+    visibility: hidden;
+}
+@media (max-width: 1200px) and (min-width:992px){
+    .content .transfer ul li{
+        column-gap: 5%;
+    }
+}

@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* :root{
+    
+} */
+
+body{
+    font-family: 'Cairo', sans-serif;
+    font-size: 1.1rem;
+    direction: rtl;
+
+}
+
+.container{
+    width: 90%;
+    margin: 2% auto;
+}
+
+.btn-orange{
+    display: inline-block;
+    background-color: #ED3118;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border: unset;
+    font-family: inherit;
+    cursor: pointer;
+
+
+}
+
+
+.btn-blue{
+   
+    background-color: #0054CE;
+    color: #fff;
+    padding: 0.8rem 2rem;
+
+    border: unset;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.8s;
+
+}
+
+.btn-blue:hover{
+    background-color: #2a6aca;
+    transition: all 0.5s;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    display: block;
+    list-style: none;
+    margin-right: 5rem;
+}
+
+ul li{
+    display: inline-block;
+    padding-left: 1rem;
+}
+
+ul li a{
+   color: #3C3C3B;
+   text-decoration: none;
+}
+
+ul li a:hover{
+    color: #0054CE;
+    transition: all 0.3s;
+ }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: center;
+    
+}
+nav .logo img{
+    width: 150px;
+}
+
+ul li a.activ{
+    color: #0054CE;
+}
+
+
+select {
+    /* word-wrap: normal; */
+    color: #414141;
+}
+
+
+.swal2-styled.swal2-confirm {
+    background-color: #0054CE!important;
+}
+
+.error{
+    border: 1PX solid #ff0000!important;
+}
+
+input{
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1PX solid #0054CE;
+    outline: unset;
+    font-family: inherit;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }

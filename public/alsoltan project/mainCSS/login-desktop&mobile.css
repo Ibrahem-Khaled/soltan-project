@@ -1,0 +1,181 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+}
+body{
+    display: grid;
+    font-family: 'Cairo', sans-serif;
+    place-items: center;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: grid;
+    width: 100%;
+    height: 80%;
+    row-gap: 9%;
+}
+.container .img {
+    display: grid;
+    width: 80%; 
+    height: 100%;   
+}
+.login-card{
+    
+    width :100%;
+    height: 100%;
+    padding: 60px 30px 30px 40px;
+    gap: 16px;
+    direction: rtl;
+}
+.container h2{
+    color: #0054CE;
+    font-size: 27px;
+    margin: 0 0 20px auto;
+    font-weight: bold;
+}
+.container h5 {
+    font-weight:bold;
+    color: #23379F;
+    margin: 0 0 10px;
+    font-size: 12px;
+}
+input{
+    display: block;
+    margin: 0 0 25px;
+    width: 74%;
+    height: 50px;
+    border: 1px solid #243BA2;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 0 16px;
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+.container header{
+    height: 90%;
+}
+button{
+    height: 50px;
+    width: 74%;
+    background: #0054CE;
+    color: #ffffff;
+    font-weight: 400;
+    border-radius: 10px;
+    border: none;
+}
+
+/* placeholder style */
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #A9A9A9;
+    opacity: 1; /* Firefox */
+    font-weight: 400;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #A9A9A9;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #A9A9A9;
+  }
+button:hover {
+    background-color: #0000ffab;
+}
+footer{
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    
+}
+a{
+    text-decoration: none;
+    margin: 0 5px 0 70px;
+    color: #A9A9A9;
+    font-weight: 600;
+    font-size: 20px;
+}
+footer img{
+    height: 25px;
+    width: 25px;
+    margin: 5px;
+
+}
+footer .facebook{
+    border: 2px solid black;
+    padding: 4px;
+    border-radius: 100%;
+}
+.login-card img{
+    width: 54%;
+    margin: 0 0 10px;
+}
+
+/*
+ tablet design
+*/
+
+@media (max-width: 992px){
+    body{
+        place-items: start;
+    }
+    .login-card{
+        width: 100%;
+        padding: 0;
+    }
+    input, button{
+        width: 100%;
+    }
+    footer{
+        justify-content: center;
+    }
+    .container h2{
+        font-size: 33px;
+    }
+    .login-card img{
+        margin: 2% auto 20%;
+        width: 80%;
+        }
+    footer img{
+        margin: 2vw;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* 
+mobile and xs screens design
+*/
+
+@media (max-width: 768px){
+
+    .login-card img{
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+    
+
+}
+@media (max-width: 576px){
+    .container{
+        padding: 0 1.8rem;
+    }
+}
+@media (max-width:450px){
+    .login-card img{
+        margin-top: 25%;
+        margin-bottom: 25%;
+    }
+    .container h2{
+        font-size: 1.3rem;
+    }
+}
+@media (max-width:336px){
+    .container h2{
+        font-size: 1rem;
+    }
+}
+

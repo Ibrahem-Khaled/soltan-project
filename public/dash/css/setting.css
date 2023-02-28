@@ -1,0 +1,92 @@
+.content{
+    margin-top: 3rem;
+    
+
+}
+
+#tableofficesetting{
+    width: 100%;
+    border-collapse: collapse ;
+}
+
+
+  
+  #tableofficesetting td, #tableofficesetting th {
+    text-align: center;
+    padding: 0.6rem;
+  }
+
+  #tableofficesetting th {
+    background-color: #F6F6F6;
+
+  }
+
+
+.form-info{
+  background-color: #F6F6F6;
+  padding: 2rem;
+
+}
+
+.box-ceiling {
+  background-color: #E4E4E4; 
+  margin: 1rem; 
+   display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.box-ceiling-input{
+  width: 80%;
+  margin-right: 2rem;
+}
+
+lable{
+  font-weight: 700;
+}
+
+.form-info h3{
+  text-align: center;
+  margin: 1rem;
+}
+
+.exports-imports{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 5%;
+  text-align: center;
+
+}
+
+form input, .select{
+  width: 100%;
+  margin: 0.5rem;
+}
+
+.select{
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1PX solid #0054CE;
+  outline: unset;
+  font-family: inherit;
+}
+
+
+
+.exports-imports form{
+  /* text-align: center; */
+}
+
+.exports-imports-btn{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+  width: fit-content;
+}
+
+.exports-imports-btn input{
+  margin-right: 1rem;
+}

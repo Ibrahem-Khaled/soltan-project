@@ -1,0 +1,162 @@
+:root{
+    --text-color: #3C3C3B;
+    --orange-color: #ED3118;
+    --highlight-color: #0054CE;
+}
+body{
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
+}
+
+/*start navbar*/
+
+.navbar{
+    margin-top: 2rem;
+}
+.navbar .navbar-collapse{
+    justify-content: space-between;
+}
+.navbar .container{
+    padding-right: 0;
+}
+.navbar-brand{
+    margin-right: 0;
+}
+.navbar-brand img{
+    max-width: 130px;
+}
+.navbar ul{
+     margin: 0 auto;
+}
+.navbar .user-pic img{
+    max-width: 50px;
+}
+.navbar .user-info{
+    white-space: nowrap;
+}
+.navbar h6{
+    color: var(--highlight-color);
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.navbar h5{
+    color: var(--orange-color);
+    font-size: 0.9rem;
+    font-weight: 600 ;
+    margin-top: 0;
+}
+.navbar .navbar-nav > li > a{
+    margin-left: 1vw;
+    padding: 1.3rem;
+    font-weight: bold;
+    color: var(--text-color);
+    white-space: nowrap;
+}
+.navbar-nav .nav-link.active{
+    color: var(--highlight-color);
+}
+.navbar .navbartoggler[aria-expanded="false"]{
+        height: 2rem;
+        width: 2.5rem;
+        background-image: var(--bs-navbar-toggler-icon-bg);
+        background-repeat: no-repeat;
+        background-size: 100%; 
+}
+.navbar .navbartoggler[aria-expanded="false"] img{
+    display: none;
+}
+.navbartoggler{
+    display: none;
+}
+
+.dropdown-menu[data-bs-popper] {
+    top: 80%;
+    left: -20px;
+}
+@media (min-width:1400px) {
+    .navbar .navbar-nav > li > select,
+    .navbar .navbar-nav > li > a{
+        margin-left: 1.5vw;
+    }
+    
+}
+
+/*START navbar mobile */
+@media (max-width: 1199.5px){
+.navbar ul{
+    padding: 1rem;
+    margin: 1rem;
+}
+.navbar .navbar-nav > li > a{
+    font-size: 1rem !important;
+
+}
+}
+@media (max-width: 991.5px){
+    .navbar{
+        margin-bottom: 1.5rem !important;
+    }
+    .navbar .navbar-collapse{
+        justify-content: flex-start;
+    }
+    .navbar h6,h5{
+        font-size: 0.8rem;
+    }
+    .navbartoggler{
+        display: inline-block;
+        z-index: 9999;
+        position: absolute;
+        width: 1rem;
+        height: 1rem;
+        top: 1rem;
+        left: 0rem;
+        border: 0px;
+        background: url("/alsoltan\ project/img/gie5B478T");
+
+    }
+    .navbar-collapse{
+        z-index: 1000;
+        display: flex;
+        position: fixed;
+        padding: 2rem;
+        inset: 0 33% 0 0 ;
+        background-color: #fff;
+        flex-wrap: nowrap;
+        flex-direction: column ;
+        align-items: flex-start;
+        box-shadow: 1px 0 8px #eee;
+    }
+    .navbar-collapse .user{
+        order: -1;
+        margin-right: 0.5rem;
+    }
+    .navbar-collapse ul{
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .navbar-collapse .user-info{
+        padding: 0 0 10px 0;
+    }
+    .navbar .navbar-nav > li > a{
+        padding: 10px;
+    }
+    .navbar-toggler-button{
+        display: inline-block;
+        width: 1rem;
+        height: 1rem;
+    }
+}
+@media (max-width:767.5px){
+    .navbar-brand img{
+        width: 6rem;
+
+    }
+}
+@media (max-width:575px){
+    .container{
+        padding: 0 1.5rem;
+    }
+}
+
+/*end navbar*/

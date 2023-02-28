@@ -1,0 +1,32 @@
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .container{
+        width: 80%;
+    }
+
+    .form-info{
+        grid-template-columns: repeat(4,25%);
+        grid-template-rows: 50%;
+        justify-content: center;
+        text-align: right;
+    }
+    .input-info.checkbox input{
+        margin: 1rem;
+     }
+
+     
+     nav ul{
+        display: inline-block;
+    }
+    /* dis menu */
+    nav .menu{
+        display: none;
+    }
+}

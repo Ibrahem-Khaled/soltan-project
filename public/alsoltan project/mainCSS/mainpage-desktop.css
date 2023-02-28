@@ -1,0 +1,263 @@
+:root{
+    --text-color: #3C3C3B;
+    --orange-color: #ED3118;
+    --highlight-color: #0054CE;
+}
+
+
+/*start news bar */
+.news-bar{
+    border: 1px solid #707070;
+    margin: 1.5rem;
+    font-weight: 600;
+}
+.news-bar .title{
+    display: inline-block;
+    background-color: var(--highlight-color);
+    color: #fff;
+    padding: 9px 10px;
+}
+.news-bar .news{
+    color: var(--text-color);
+}
+/*end news bar */
+
+/*start exchange prices*/
+.exchange-prices{
+    border: 1px solid #707070;
+    margin: 1.5rem 1.5rem 1rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.exchange-prices .row{
+    display: grid;
+    padding: 4%;
+    place-content: center;
+    color: var(--text-color);
+}
+.exchange-prices .row .title{
+    color: var(--orange-color);
+}
+/*end exchange prices*/
+
+/*start buttons */
+@media (min-width:992px) {
+    
+    .buttons{
+        display: flex;
+        margin: 1rem;
+        justify-content: center;
+    }
+ 
+    .buttons button{
+        font-size: 0.9rem;
+        background-color: #DCDCDC;
+        font-weight: bold;
+        width: 120px;
+        height: 50px;
+        padding: 0rem;
+        margin: 0.5rem;
+        border:0;
+    }
+}
+    /*end buttons */
+
+    /*start pages */
+
+    .pages .page input:focus-visible,
+    .pages .page textarea:focus-visible,
+    .pages .page select:focus-visible{
+        border: 1px solid var(--highlight-color);
+        outline: none;
+    }
+    .pages .page select option{
+        color: var(--text-color);
+        
+    }
+    .pages .page select option::after{
+        height: 1px;
+        width: 30px;
+        color: var(--text-color);
+    }
+    .pages .page select option:focus-visible{
+        background-color: white;
+    }
+    /* Custome arrow */
+    .pages .page select {
+        color: #A9A9A9 !important;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;      
+        background-image: url(/alsoltan\ project/img/arrow.png);
+        background-repeat: no-repeat; 
+        background-size: 8%;  
+        background-position-y: center;
+        background-position-x: 10px ;
+     }
+
+        /*start page2 exchange-prices*/
+
+    .pages .page .page2{
+        grid-template-rows: 30% 30% 30%;
+        gap: 5% 5%;
+    
+    }
+    .pages .page div:has(label[for='exchange-prices']) {
+        height: 100%;
+        grid-row: 1 / span 3;
+        grid-column: 3;
+        }
+        .pages .page2 div:has(h7){
+            display: flex;
+            justify-content: space-between;
+            width: 70%;
+        }
+        .pages .page2 h7{
+            font-weight: 400;
+            color: var(--text-color);
+            font-size: 13px;
+        }
+
+
+
+        #exchange-prices2{
+            padding: 3rem 0;
+            background-color: white;
+            margin-top: 0.5rem;
+            box-shadow: 0 0 4px #00000042;
+        }
+        #exchange-prices2 .row {
+
+            padding: 0;
+        }
+        #exchange-prices2 .bordered{
+            border-bottom: 1px solid #BFBFBF;
+            border-top: 1px solid #BFBFBF;
+        }
+        #exchange-prices2 .currency{
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            margin: 0 2rem;
+            padding: 1rem 0;
+        }
+        #exchange-prices2 .title,
+        #exchange-prices2 .balance{
+            display: inline-block;
+            width:auto;
+            margin: 0 !important;}
+
+        /*start page2 exchange-prices*/
+
+    @media (min-width: 768px){
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: white;
+
+      }
+      
+      :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: white;
+      }
+      
+      ::-ms-input-placeholder { /* Microsoft Edge */
+        color: white;
+
+      }
+      .pages {
+        padding: 2% 3% 7% 3%;
+        background-color: #F6F6F6;
+        width: 70%;
+        height: auto;
+        margin: 1rem auto 2rem;
+        box-shadow: 0 0 4px #00000042;
+    }
+    .pages .page{
+        width: 100%;
+        height: auto;
+        height: fit-content;
+    }
+    .pages .page form{
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: 20% 20% 20% 20%;
+        gap: 15% 5%;
+    }
+    .pages .page form div label {
+        font-weight: bold;
+        color: var(--text-color);
+    }
+    .pages .page div input,
+    .pages .page div select{
+        height: 80%;
+    }
+    .pages .page2 div input,
+    .pages .page2 div select{
+        height: 40%;
+    }
+    .pages .page div:has(label[for='note']) {
+        grid-row: 2 / span 2;
+        grid-column: 3;
+        }
+
+
+    .pages .page div textarea{
+        height: 90% !important;
+
+    }
+    .pages .page input,
+    .pages .page select,
+    .pages .page textarea
+    {
+        width: 100%;
+        padding-right: 10px;
+        margin: 0.2rem;
+        border: 1px solid var(--highlight-color);
+        border-radius: 5px;
+        color: var(--text-color);
+        font-weight: 400;
+        font-size: smaller;
+    }
+    .pages .page input[type='submit']{
+        background-color: #ED3118;
+        width: 15%;
+        height: 2.4rem;
+        border: 0;
+        color: white;
+        border-radius: 0;
+        font-size: small;
+    }
+    .pages .page h5{
+        font-size: large;
+        font-weight: bold;
+        color: #ED3118;
+    }
+    .pages .page form .submit{
+        grid-column: 1 /span 3;
+    }
+    .pages .page form .submit div{
+        align-items: flex-end;
+        order: -1;
+    }
+    .pages .page form div:has(label[for="office1"]),
+    .pages .page form div:has(label[for="office3"]){
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+
+}
+@media (min-width: 767.5px) and (max-width: 991.5px){
+    .pages{
+        width: 93%;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        padding-bottom: 8%;
+    }
+    .pages .page form .submit input{
+        margin-top: 0;
+    }
+
+}
+
+    /*end pages */

@@ -1,0 +1,187 @@
+:root{
+    --text-color: #3C3C3B;
+    --orange-color: #ED3118;
+    --highlight-color: #0054CE;
+}
+
+
+    
+    /*start news bar*/
+    .news-bar{
+        margin: 0.5rem 0;
+        display: flex;
+        overflow: hidden;
+        align-items: center;
+    }
+    .news-bar .news,
+    .news-bar .title{
+        white-space: nowrap;
+        flex-wrap: nowrap;
+        
+    }
+    /*end news bar*/
+    
+    /*start exchange prices*/
+    .exchange-prices{
+        background-color: white;
+        margin: 0.5rem 0;
+    }
+    .exchange-prices .row {
+        padding: 0;
+    }
+    .exchange-prices .bordered{
+        border-bottom: 1px solid #707070;
+    }
+    .exchange-prices .currency{
+        display: flex;
+        margin: 0 5rem;
+        padding: 1rem 0;
+    }
+    .exchange-prices .title,
+    .exchange-prices .balance{
+        display: inline-block;
+        width:auto;
+        margin: 0 !important;}
+    
+    /*end exchange prices*/
+
+    /*start buttons */
+    .buttons{
+        margin: 1rem 0 ;
+        display: flex;
+        justify-content: space-between;
+    }
+    .buttons .button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.9rem;
+        width: 30%;
+    }
+    .buttons button{
+        width: 200px;
+        height: 50px;
+        border: 0;
+        background-color: #DCDCDC;
+        padding: 0.2rem 3.8rem;
+        font-weight: bold;
+
+    }
+    @media (max-width:767.5px){
+        .balance-rates .currency{
+            margin: 0 3rem;
+        }
+        .buttons .button{
+        padding: 0;
+        font-size: 0.7rem;
+    }
+    .buttons button{
+        padding: 0.2rem 2rem;
+    }
+    }
+    @media (max-width: 473px){
+        .buttons button{
+            padding: 0 0.7rem;
+        }
+    }
+    /*end buttons */
+
+    /*start pages*/
+    @media (max-width: 767.5px){
+    .pages {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0;
+        background-color: #F6F6F6;
+        box-shadow: 0 0 4px #00000042;
+    }
+    .pages .page{ 
+        padding: 1rem 2rem;
+    }
+    .pages .page label{
+        display: none;
+        
+    }
+    .pages .page input,
+    .pages .page textarea,
+    .pages .page select
+    {
+        padding-right: 10px;
+        width: 100%;
+        height: 2rem;
+        margin: 0.2rem 0.2rem 0.3rem;
+        border: 1px solid #0054CE;
+        border-radius: 5px;
+        color: #A9A9A9;
+        font-weight: 400;
+        font-size: smaller;
+    }
+    .pages .page select {
+        background-size: 15px;
+    }
+
+    .pages .page input[type='submit']{
+        background-color: #ED3118;
+        width: 75%;
+        height: 2.4rem;
+        border: 0;
+        color: white;
+        border-radius: 0;
+        font-size: small;
+    }
+    .pages .page h5{
+        font-size: medium;
+        font-weight: bold;
+        color: #ED3118;
+
+    }
+    .pages .page form .submit div{
+        flex-direction: column;
+        align-items: center;
+    }
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #A9A9A9;
+        opacity: 1; /* Firefox */
+        font-weight: 400;
+        font-size: smaller;
+      }
+      
+      :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: #A9A9A9;
+        font-weight: 400;
+        font-size: smaller;
+      }
+      
+      ::-ms-input-placeholder { /* Microsoft Edge */
+        color: #A9A9A9;
+        font-weight: 400;
+        font-size: smaller;
+      }
+
+      /*page2*/
+
+      .pages .page2 #exchange-prices2 {
+        border: 1px solid var(--highlight-color);
+        box-shadow: none;
+        padding: 1rem 0;
+        
+      }
+      .pages .page2 label[for="exchange-prices"]{
+        display: block;
+      }
+    .pages .page2 div:has(h7){
+        margin: 1rem auto;
+        justify-content: center;
+        justify-content: space-around;
+    }
+    .pages .page2  h7{
+        color: var(--orange-color);
+        font-weight: bold;
+        font-size: 16px;
+    }
+    .pages .page2 #exchange-prices2 .row{
+        padding: 0.3rem 0;
+    }
+
+    /*end pages*/
+    }

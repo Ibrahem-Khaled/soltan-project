@@ -1,0 +1,26 @@
+.content h2{
+    color: #0054CE;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    font-size: 25px;
+}
+.content table{
+    width: 100%;
+    text-align: center;
+    color: #3C3C3B;
+    font-weight: bold;
+}
+.content table tr{
+    height: 4rem;
+}
+.content table th{
+    background-color: #F2F2F2;
+    
+}
+.content .mobile-title{
+    display: none;
+}
+.accounting2 table tr td:nth-child(4),
+.accounting2 table tr:nth-child(even){
+    background-color: #FFE5E2;
+}
